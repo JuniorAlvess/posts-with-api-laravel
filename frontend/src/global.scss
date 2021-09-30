@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --bodyBackgroundColor: #E3FDFD;
+    --backgroundColor: #CBF1F5;
+    --letterColor: #333333;
+    --buttonBackground: #71C9CE;
+    --buttonColor: #EEEEEE;
+    --backgroundColorInput: #A6E3E9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background: var(--bodyBackgroundColor);
+}

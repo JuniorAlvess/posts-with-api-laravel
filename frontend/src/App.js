@@ -1,6 +1,8 @@
+import Paths from './routes.js'
+
 const App = () => {
   return (
-    <p>Foi</p>
+    <Paths />
   );
 }
 
