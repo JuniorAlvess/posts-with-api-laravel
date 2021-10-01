@@ -3,7 +3,7 @@
 
     width: clamp(22rem, 70vw, 35rem);
 
-    margin: 2.437rem auto;
+    margin: 1.5rem auto;
 
     display: flex;
     flex-direction: column;
@@ -13,7 +13,8 @@
     padding: 1rem;
 
     border-radius: .9375rem;
-    box-shadow: 0 .2em .3em #71C9CE;
+    // box-shadow: 0 .2em .3em #71C9CE;
+    box-shadow: 0 .2em .3em rgba(129, 127, 127, 0.801);
 
     input, textarea {
         background: var(--backgroundColorInput);
