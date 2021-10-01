@@ -1,0 +1,72 @@
+.formPosts {
+    background: var(--backgroundColor);
+
+    width: clamp(22rem, 70vw, 35rem);
+
+    margin: 2.437rem auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1rem;
+
+    border-radius: .9375rem;
+    box-shadow: 0 .2em .3em #71C9CE;
+
+    input, textarea {
+        background: var(--backgroundColorInput);
+        color: var(--letterColor);
+
+        padding: .5rem 1rem;
+
+        font-size: clamp(1rem, 1.3vw, 2rem);
+
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+
+        border: none;
+        border-radius: 1.187rem;
+
+        box-shadow: inset 0 0 0.4em #71C9CE;
+    }
+    input {
+        width: 90%;
+    }
+
+    textarea {
+        width: 100%;
+        min-height: 3rem;
+        resize: vertical;
+    }
+
+    ::placeholder {
+        color: var(--letterColor);
+    }
+
+    button[type="submit"] {
+        background: var(--buttonBackground);
+        color: var(--buttonColor);
+
+        margin-top: .5rem;
+        padding: .5rem 1rem;
+        align-self: flex-end;
+
+        font-size: clamp(.8rem, 2vw, 1.5rem);
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+
+        border: none;
+        border-radius: .625rem;
+        cursor: pointer;
+        transition: .3s;
+        
+        &:hover {
+            filter: brightness(.95);
+        }
+        &:active {
+            transform: scale(.90);
+        }
+    }
+}

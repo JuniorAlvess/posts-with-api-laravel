@@ -1,0 +1,47 @@
+section {
+    background: var(--backgroundColor);
+
+    width: clamp(22rem, 70vw, 35rem);
+
+    margin: 2.437rem auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1rem;
+
+    border-radius: .9375rem;
+    box-shadow: 0em 0em .5em #71C9CE;
+
+    .postGroup {
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        // border: 1px solid #000;
+
+        .icons{
+            display: inherit;
+            gap: .5rem;
+        }
+
+        .icon {
+            cursor: pointer;
+        }
+    }
+    span {
+        color: var(--letterColor);
+        font-size: clamp(1rem, 2vw, 1.5rem);
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+    }
+    article {
+        color: var(--letterColor);
+        font-size: clamp(1rem, 1.6vw, 1.2rem);
+    }
+
+}

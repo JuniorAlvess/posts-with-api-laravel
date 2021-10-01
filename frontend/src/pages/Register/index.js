@@ -5,6 +5,7 @@ const Register = () => {
         <Form 
             title="Cadastre-se"
             navigation="/"
+            toLogin="Já possui cadastro?"
             buttonText="Cadastrar"
         />
     );

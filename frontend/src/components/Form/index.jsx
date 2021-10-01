@@ -1,12 +1,12 @@
 import { useNavigate } from 'react-router-dom';
 import { FiUser, FiLock } from 'react-icons/fi';
 
-import './style.module.scss';
+import styles from './style.module.scss';
 
 const Form = (props) => {
     const navigate = useNavigate()
     return (
-        <form onSubmit={props.submit}>
+        <form className={styles.formAuth} onSubmit={props.submit}>
             <span>{props.title}</span>
 
             <div>
@@ -25,6 +25,7 @@ const Form = (props) => {
                 <input type="password" name="psw" placeholder="Senha" />
             </div>
             <p onClick={() => navigate('/register')}>{props.toRegister}</p>
+            <p onClick={() => navigate('/')}>{props.toLogin}</p>
 
             <button
                 type="submit"

@@ -1,0 +1,9 @@
+.container {
+    width: 50vw;
+    width: clamp(25rem, 70vw, 40rem);
+
+    margin: 0 auto;
+    padding: 1rem;
+
+    // border: 1px solid #f00;
+}
