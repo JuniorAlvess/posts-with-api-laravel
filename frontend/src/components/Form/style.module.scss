@@ -1,78 +1,110 @@
-$font-input: 0.875rem 400 'Poppins',
-sans-serif;
+    .formAuth {
+        background: var(--backgroundColor);
 
-form {
-    background: var(--backgroundColor);
+        width: clamp(19.25rem, 70vw, 25rem);
 
-    width: 19.25rem;
-    height: 21.75rem;
+        margin: 10rem auto;
 
-    margin: 10rem auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    // justify-content: space-evenly;
-    padding: 1rem;
-
-    border: 1px solid #71C9CE;
-    border-radius: 6.25rem 0.2rem 6.25rem 0.2rem;
-
-    span {
-        color: var(--buttonBackground);
-        font-size: 1.875rem;
-        font-weight: 700;
-        font-family: 'Roboto', sans-serif;
-        margin: 2rem;
-
-        text-shadow: 0px 4px 4px rgba(113, 201, 206, 0.7);
-    }
-
-    div {
-        background: var(--backgroundColorInput);
-        // border: 1px solid #000;
-
-        padding: 0.5rem;
         display: flex;
-        gap: .5rem;
+        flex-direction: column;
+        align-items: center;
 
-        border-radius: 0.375rem;
-        box-shadow: inset 0 0 0.4em #333;
+        padding: 1rem;
 
-        &+div {
-            margin-top: 1rem;
+        border: 1px solid #71C9CE;
+        border-radius: 6.25rem 0.2rem 6.25rem 0.2rem;
+
+        box-shadow: 0 .1em .5em #333;
+
+        span {
+            color: var(--buttonBackground);
+
+            font-size: clamp(1.875rem, 4vw, 3rem);
+            font-weight: 700;
+            font-family: 'Roboto', sans-serif;
+            margin: 2rem;
+
+            text-shadow: 0px 4px 4px rgba(113, 201, 206, 0.7);
+        }
+
+        div {
+            background: var(--backgroundColorInput);
+
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+
+            border-radius: 0.375rem;
+            box-shadow: inset 0 0 0.4em #333;
+
+            &+div {
+                margin-top: 1rem;
+            }
+        }
+
+        input {
+            background: transparent;
+            color: var(--letterColor);
+            width: 90%;
+
+            // padding: .5rem;
+
+            // font-size: 1.3rem;
+            font-size: 1rem;
+            font-size: 2rem;
+            font-size: clamp(1rem, 1.3vw, 2rem);
+
+            font-weight: 400;
+            font-family: 'Poppins', sans-serif;
+
+            border: none;
+        }
+
+        ::placeholder {
+            color: var(--letterColor);
+        }
+
+        p {
+            color: var(--letterColor);
+
+            font-size: .8rem;
+            font-weight: 700;
+            font-family: 'Roboto', sans-serif;
+
+            margin-top: .5rem;
+            align-self: baseline;
+            text-decoration: underline;
+            cursor: pointer;
+            transition: filter .3s;
+
+            &:hover {
+                filter: opacity(70%);
+            }
+        }
+
+        button[type="submit"] {
+            background: var(--buttonBackground);
+            color: var(--buttonColor);
+
+            margin-top: 1.5rem;
+            padding: .5rem 1.5rem;
+
+            font-size: 1.125rem;
+            font-weight: 700;
+            font-family: 'Roboto', sans-serif;
+
+            border: none;
+            border-radius: .625rem;
+            cursor: pointer;
+            transition: .3s;
+
+            &:hover {
+                filter: brightness(.95);
+            }
+
+            &:active {
+                transform: scale(.90);
+            }
         }
     }
-
-    input {
-        background: transparent;
-        color: var(--letterColor);
-        width: 90%;
-
-        // padding: .5rem;
-
-        font-size: 1.3rem;
-        font-weight: 400;
-        font-family: 'Poppins', sans-serif;
-
-        border: none;
-    }
-
-    button[type="submit"] {
-        background: var(--buttonBackground);
-        color: var(--buttonColor);
-
-        margin-top: 2rem;
-        padding: .5rem 1.5rem;
-
-        font-size: 1.125rem;
-        font-weight: 700;
-        font-family: 'Roboto', sans-serif;
-
-        border: none;
-        border-radius: .625rem;
-
-        &:active {
-            transform: scale(.90);
-        }
-    }
-}
