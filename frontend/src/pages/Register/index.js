@@ -4,7 +4,7 @@ const Register = () => {
     return (
         <Form 
             title="Cadastre-se"
-            navigation="login"
+            navigation="/"
             buttonText="Cadastrar"
         />
     );
