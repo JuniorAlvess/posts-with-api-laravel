@@ -15,21 +15,31 @@ const Form = (props) => {
                     color="#333333"
                 />
                 </label>
-                <input type="email" name="email" placeholder="Email" />
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    onChange={props.setterEmail}
+                />
             </div>
             <div className="input-group">
                 <label htmlFor="psw"><FiLock
                     size={35}
                     color="#333333"
                 /></label>
-                <input type="password" name="psw" placeholder="Senha" />
+                <input
+                    type="password"
+                    name="psw"
+                    placeholder="Senha"
+                    onChange={props.setterPassword}
+                />
             </div>
             <p onClick={() => navigate('/register')}>{props.toRegister}</p>
             <p onClick={() => navigate('/')}>{props.toLogin}</p>
 
             <button
                 type="submit"
-                onClick={() => navigate(`/${props.navigation}`)}
+                // onClick={() => navigate(`/${props.navigation}`)}
             >
                 {props.buttonText}
             </button>
